@@ -2,101 +2,84 @@ const ProjectPage = () => {
   return (
     <div className="w-full max-w-7xl mx-auto px-4 relative z-20">
       <h1 className="text-4xl md:text-5xl font-roadrage text-center mb-12">
-        About The Project
+        About Our Conference Ticket Platform
       </h1>
       <div className="space-y-8">
         <div className="p-6 bg-greenfour rounded-[32px] border border-greenthree">
-          <h2 className="text-2xl font-roadrage mb-4">Development Process</h2>
+          <h2 className="text-2xl font-roadrage mb-4">Project Overview</h2>
           <p className="font-roboto">
-            <strong>Event Ticket Booking UI – Open Source Practice Project 🏷️</strong>
+            <strong>Conference Ticket Platform: Empowering Event Management 🚀</strong>
           </p>
           <p className="font-roboto">
-            <strong>Overview:</strong> 
-            This beginner-friendly yet practical Event Ticket Booking UI is designed for developers to clone, explore, and build upon. The design focuses on a seamless, login-free ticket reservation flow, allowing users to book event tickets quickly and efficiently.
+            <strong>Mission:</strong> To build a comprehensive, open-source platform that simplifies conference ticket sales, attendee management, and overall event logistics for organizers of all sizes.  We aim to provide a robust, customizable solution that reduces administrative overhead and enhances the attendee experience.
           </p>
           <p className="font-roboto">
-            The project consists of a three-step ticket booking flow, and developers can extend it further by integrating payment solutions, user authentication (optional), and ticket validation systems.
+            This project provides an accessible and powerful tool for event planners and a valuable learning opportunity for developers interested in full-stack web development and event management solutions.
           </p>
-          <h3 className="font-roadrage mb-2">Flow & Features:</h3>
-          <ol className="list-decimal list-inside">
+
+          <h3 className="font-roadrage mb-2">Core Functionalities:</h3>
+          <ul className="list-disc list-inside">
             <li className="mb-2">
-              <strong>Ticket Selection:</strong>
-              <ul className="ml-4">
-                <li>Users can browse available tickets (Free & Paid).</li>
-                <li>Ticket options are displayed in a list or card view.</li>
-                <li>For Free Tickets: Clicking "Get Free Ticket" proceeds to attendee details.</li>
-                <li>For Paid Tickets: Clicking "Purchase Ticket" would ideally open a payment modal.</li>
-              </ul>
+              <strong>Dynamic Event Creation:</strong>  Configure event details like name, description, dates, venue, and speaker information through an intuitive interface.
             </li>
             <li className="mb-2">
-              <strong>Attendee Details Form:</strong>
-              <ul className="ml-4">
-                <li>Users input their Name, Email, and optional Phone Number.</li>
-                <li>Profile picture upload option with preview functionality.</li>
-                <li>Ticket summary is visible to ensure users review their details before submission.</li>
-              </ul>
+              <strong>Flexible Ticketing Options:</strong>  Define multiple ticket tiers (e.g., Early Bird, Standard, VIP) with customized pricing, availability, and access privileges. Implement discount codes and promotional offers.
             </li>
             <li className="mb-2">
-              <strong>Payment or Success Page:</strong>
-              <ul className="ml-4">
-                <li>If the ticket is free, the user is taken directly to the Ticket Confirmation Page.</li>
-                <li>If the ticket is paid, developers can integrate payment solutions before showing the confirmation page.</li>
-                <li>Upon successful booking, users should receive:</li>
-                <ul className="ml-4 list-disc">
-                  <li>A visual ticket preview with a unique QR Code.</li>
-                  <li>An option to download the ticket as PDF or save it to their device.</li>
-                  <li>An email confirmation containing ticket details.</li>
-                </ul>
-              </ul>
+              <strong>Streamlined Attendee Registration:</strong>  Capture essential attendee information (name, email, affiliation) through customizable registration forms. Support for optional data collection (dietary restrictions, interests).
             </li>
-          </ol>
-          <h3 className="font-roadrage mb-2">How to Build This 🚀</h3>
+            <li className="mb-2">
+              <strong>Secure Payment Processing:</strong>  Seamless integration with trusted payment gateways (Stripe, PayPal) for secure online transactions.  Support for refunds and transaction management.
+            </li>
+            <li className="mb-2">
+              <strong>Automated Communication:</strong>  Generate automated email confirmations, reminders, and updates to attendees.
+            </li>
+            <li className="mb-2">
+              <strong>Real-time Reporting & Analytics:</strong>  Monitor ticket sales, attendance rates, revenue generation, and other key metrics through interactive dashboards and customizable reports.
+            </li>
+            <li className="mb-2">
+              <strong>Digital Ticketing & Check-in:</strong>  Generate unique QR codes for each ticket.  Develop a mobile app or web interface for efficient attendee check-in on the day of the event.
+            </li>
+          </ul>
+
+          <h3 className="font-roadrage mb-2">Technology Stack:</h3>
           <p className="font-roboto">
-            This UI can be implemented using:
+            We leverage cutting-edge technologies to ensure scalability, performance, and a modern user experience:
           </p>
-          <h4 className="font-roadrage">Frontend (Next.js or React):</h4>
-          <ul className="ml-4">
-            <li>Component Breakdown:
-              <ul className="ml-4 list-disc">
-                <li>TicketCard.tsx → Displays ticket details</li>
-                <li>AttendeeForm.tsx → Captures user details</li>
-                <li>PaymentModal.tsx → Handles payment processing</li>
-                <li>SuccessScreen.tsx → Shows the final ticket preview</li>
-              </ul>
-            </li>
-            <li>
-              State Management: React’s Context API, Zustand, or Redux (if needed).
-            </li>
-            <li>
-              File Handling: Users should be able to upload images (profile picture for ticket) using Firebase Storage, Cloudinary, or local preview with URL.createObjectURL().
-            </li>
+          <ul className="list-disc list-inside">
+            <li><strong>Frontend:</strong> React.js (with TypeScript), Tailwind CSS, Redux Toolkit for state management</li>
+            <li><strong>Backend:</strong> Node.js (with TypeScript), Express.js, GraphQL API</li>
+            <li><strong>Database:</strong> PostgreSQL with Prisma ORM</li>
+            <li><strong>Authentication:</strong>  JSON Web Tokens (JWT)</li>
+            <li><strong>Cloud Infrastructure:</strong>  AWS (EC2, S3, RDS) or Google Cloud Platform (Compute Engine, Cloud Storage, Cloud SQL)</li>
           </ul>
-          <h4 className="font-roadrage">Backend (Optional):</h4>
-          <ul className="ml-4">
-            <li>If persistence is required, a backend can be built using Node.js & Express or Firebase Functions.</li>
-            <li>
-              Database options: MongoDB, PostgreSQL, or Firebase Firestore to store ticket records.
-            </li>
+
+          <h3 className="font-roadrage mb-2">Contribute and Learn:</h3>
+          <p className="font-roboto">
+            We welcome developers of all levels to contribute to our open-source project. Here are some ways to get involved:
+          </p>
+          <ul className="list-disc list-inside">
+            <li>**Bug Fixes:** Help us identify and resolve bugs to improve the stability and reliability of the platform.</li>
+            <li>**Feature Development:** Contribute new features and functionalities to enhance the platform's capabilities.</li>
+            <li>**Documentation:** Improve our documentation to make the project more accessible and user-friendly.</li>
+            <li>**Testing:**  Write unit and integration tests to ensure the quality of the code.</li>
+            <li>**UI/UX Enhancements:**  Contribute to improving the user interface and user experience of the platform.</li>
           </ul>
-          <h4 className="font-roadrage">Payment Integration:</h4>
-          <ul className="ml-4">
-            <li>
-              For paid events, developers should integrate:
-              <ul className="ml-4 list-disc">
-                <li>Stripe Checkout (for international transactions)</li>
-                <li>Paystack or Flutterwave (for African users)</li>
-              </ul>
-            </li>
+
+          <h3 className="font-roadrage mb-2">Skills You'll Develop:</h3>
+          <ul className="list-disc list-inside">
+            <li>Full-stack web development with React, Node.js, and PostgreSQL.</li>
+            <li>Designing and implementing RESTful and GraphQL APIs.</li>
+            <li>Working with relational databases and ORMs.</li>
+            <li>Implementing secure authentication and authorization mechanisms.</li>
+            <li>Deploying and managing applications on cloud platforms.</li>
+            <li>Collaborating on open-source projects using Git and GitHub.</li>
           </ul>
-          <h3 className="font-roadrage mb-2">What You’ll Learn 👩‍💻</h3>
-          <ul className="ml-4">
-            <li>File handling & validation (profile picture uploads).</li>
-            <li>Dynamic UI updates based on ticket selection.</li>
-            <li>Persisting bookings using local state or a backend.</li>
-            <li>Integrating payment gateways for ticket purchases.</li>
-            <li>Generating & validating QR Codes for event check-in (Advanced).</li>
-          </ul>
-          <h3 className="font-roadrage mb-2">Need Help? Reach Out! 💬</h3>
+
+          <h3 className="font-roadrage mb-2">Join the Community!</h3>
+          <p className="font-roboto">
+            Ready to make a difference in the event management world?  Visit our GitHub repository (link to be added) to explore the code, contribute, and connect with our community. Let's build the future of conference ticketing together!
+          </p>
         </div>
       </div>
     </div>
